@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link 
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""
+    />
+    <script
+        src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""
+        defer
+    ></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+<body>
+    <main>
+        <div class="section-search">
+            <h1 class="section-search__title">IP Address Tracker</h1>
+            <div class="section-search__input">
+                <input id="search-input" type="text" placeholder="Search for any IP address or domain">
+                <button id="search-button">
+                    <img src="assets/images/icon-arrow.svg" alt="go">
+                </button>
+            </div>
+        </div>
+        <div class="section-panel">
+            <div class="container-panel">
+                <div class="section-panel__block">
+                    <label class="section-panel__label">IP ADDRESS</label>
+                    <span id="get-content-ip" class="section-panel__data"></span>
+                </div>
+                <div class="section-panel__block">
+                    <label class="section-panel__label">LOCATION</label>
+                    <span id="get-content-local" class="section-panel__data"></span>
+                </div>
+                <div class="section-panel__block">
+                    <label class="section-panel__label">TIMEZONE</label>
+                    <span id="get-content-timezone" class="section-panel__data"></span>
+                </div>
+                <div class="section-panel__block">
+                    <label class="section-panel__label">ISP</label>
+                    <span id="get-content-isp" class="section-panel__data"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="renderMap" class="section-map"></div> 
+    </main>
+    <script src="assets/script.js" defer></script>
+</body>
+</html>
